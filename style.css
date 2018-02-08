@@ -1,0 +1,81 @@
+/*!
+Theme Name: Rugged Bear
+Theme URI: https://www.ruggedbera.com/
+Author: DCC Marketing
+Author URI: https://demanddcc.com/
+Description: Under construction theme for Rugged Bear.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: ruggedbear
+Tags: 
+*/
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	align-content 			: center;
+	align-items 			: center;
+	background 				: #f1f0eb;
+	display 				: grid;
+	font-size 				: 20px;
+	grid-template-columns	: auto;
+	grid-template-areas		: "header" "content" "footer";
+	height 					: 100vh;
+	justify-content 		: center;
+	justify-items 			: center;
+}
+
+header {
+	margin-bottom	: 1.5em;
+	padding 		: 1em;
+}
+
+main {
+	grid-area		: content;
+	margin-bottom	: 1.5em;
+	overflow		: hidden;
+	padding 		: 1em;
+}
+
+footer {
+	grid-area		: footer;
+	margin-bottom	: 1.5em;
+	padding 		: 1em;
+}
+
+img {
+	height 		: auto; /* Make sure images are scaled correctly. */
+	max-width 	: 100%;
+}
+
+a {
+	color: royalblue;
+
+	&:visited {
+		color: purple;
+	}
+
+	&:active,
+	&:hover {
+		color: midnightblue;
+	}
+
+	&:focus {
+		color 			: midnightblue;
+		outline-color 	: #adb5bd;
+	}
+}
+
+p {
+	margin 			: 0;
+	margin-bottom 	: 1.5em;
+}
